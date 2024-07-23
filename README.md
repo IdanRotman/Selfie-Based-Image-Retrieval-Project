@@ -6,7 +6,6 @@ This project is a web application that allows users to upload a photo of a face 
 
 - [Introduction](#introduction)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
 
 
 ## Introduction
@@ -27,18 +26,3 @@ The main goal of this project is to create a facial recognition system that can 
 - **Libraries:**
   - `face_recognition`: Used for face detection and encoding
   - `MTCNN`: Used for face detection
-
-## Project Structure
-    project-directory/
-│
-├── original_images/ # Directory with original images
-├── processed_faces/ # Directory to store processed face images
-│ └── encodings.pkl # Encoded face data
-├── static/
-│ ├── script.js # JavaScript file for frontend logic
-│ └── styles.css # CSS file for styling
-├── templates/
-│ └── index.html # HTML template for the web application
-├── app.py # Flask application
-└── preprocess_faces.py # Script to preprocess and encode faces
-
