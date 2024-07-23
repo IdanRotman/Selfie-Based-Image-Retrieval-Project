@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Recognition App</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="imageInput" name="image" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+        <div>
+            <button id="startCamera">Take Photo</button>
+        </div>
+        <div id="cameraContainer" style="display: none;">
+            <video id="camera" width="320" height="240" autoplay></video>
+            <button id="capturePhoto">Capture</button>
+            <canvas id="photoCanvas" style="display: none;"></canvas>
+        </div>
+        <div id="loader" style="display: none;">Processing...</div>
+        <div id="result" class="result-container"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
